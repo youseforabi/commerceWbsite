@@ -1,0 +1,142 @@
+
+<nav #navBar
+    class="navbar navbar-expand-lg navbar-light bg-light fixed-top "
+>
+    <div class="container-fluid">
+        <a class="navbar-brand" href="">
+            <img src="assets/images/freshcart-logo.svg" alt="fresh cart logo">
+        </a>
+        <button
+            class="navbar-toggler d-lg-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+
+         
+
+            <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+              
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/home" routerLinkActive="active-link">Home</a>
+                </li>
+
+                <!-- <li class="nav-item">
+                    <a class="nav-link" routerLink="/brands" routerLinkActive="active-link">Brands</a>
+                </li> -->
+
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/products" routerLinkActive="active-link">Products</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/wishlist" routerLinkActive="active-link">WishingList</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/categories" routerLinkActive="active-link">Categories</a>
+                </li>
+
+                
+            </ul>
+
+
+            <ul class="navbar-nav ms-auto mt-2 mt-lg-0 align-items-center">
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="fas fa-user"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li role="button" routerLink="/forgetpassword" routerLinkActive="active-link"><a class="dropdown-item">Forget Password</a></li>
+                      
+                    </ul>
+                  </li>
+
+               
+
+                <li class="nav-item">
+                <a class="nav-link position-relative" routerLink="/cart">
+                        <span class="badge bg-info position-absolute top-0 end-0" >{{curtNumber}}</span>
+                        <i class="fas fa-cart-shopping me-2 text-main "></i>
+                    </a>
+                </li>
+              
+                <li class="nav-item d-flex gap-3 me-3">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-behance"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </li>
+
+                <li class="nav-item">
+                    <span (click)="signOut()" role="button">Sign Out</span>
+                </li>
+
+            </ul>
+        
+        </div>
+    </div>
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+    <div class="container">
+
+      <a class="navbar-brand" href="">
+        <img src="assets/images/freshcart-logo.svg" alt="fresh cart logo">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse d-flex align-items-center justify-content-between" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="px-2" routerLink="/home" routerLinkActive="active-link">Home</a>
+          <a class="px-2" routerLink="/brands" routerLinkActive="active-link">Brands</a>
+          <a class="px-2" routerLink="/categories" routerLinkActive="active-link">Categories</a>
+          <a class="px-2" routerLink="/cart" routerLinkActive="active-link">Cart</a>
+          <a class="px-2" routerLink="/products" routerLinkActive="active-link">Products</a>
+        </div>
+
+        <div class="d-flex gap-3 align-items-center">
+
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-behance"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+
+            <div> 
+                <span role="button">Sign Out</span>
+            </div>
+
+        </div>
+
+       
+
+      </div>
+
+    </div>
+
+  </nav> -->
