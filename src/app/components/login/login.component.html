@@ -36,14 +36,7 @@
 
         <a role="button" routerLink="/forget" class="link-primary">Forget Password</a>
        
-        <button routerLink="/register"  class="btn bg-main text-white d-block mx-2 mt-2">
-            Register Now 
-        </button>
-
-        <button routerLink="/register"  class="btn bg-main text-white d-block mx-2 mt-2">
-            Register Now 
-        </button>
-
+ 
         <button [disabled]="loginForm.invalid" class="btn bg-main text-white d-block ms-auto mt-2">
             Login <i *ngIf="isLoading" class="fa-solid fa-spinner fa-spin"></i>
         </button>
