@@ -46,7 +46,7 @@ export class CartService {
 
   chechOut(cartID:string|null , orderInfo:object):Observable<any>
   {
-    return this._HttpClient.post(`${this.baseUrl}orders/checkout-session/${cartID}?url=https://youseforabi.github.io`,
+    return this._HttpClient.post(`${this.baseUrl}orders/checkout-session/${cartID}?url=https://commerce-wbsite.vercel.app`,
     
       {
         shippingAddress: orderInfo
