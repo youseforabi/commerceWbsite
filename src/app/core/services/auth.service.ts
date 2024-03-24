@@ -24,13 +24,15 @@ export class AuthService {
     return this._HttpClient.post(`${this.baseUrl}/api/v1/auth/signin` , userData)
   }
 
+   userToken :any ;
+  userId:string = '';
   decodeUser():void{
     const encode = localStorage.getItem('eToken');
     if( encode !== null ){
       const decode = jwtDecode(encode);
-      this.userInfo = decode;
-    }
-
+      this.userToken = decode;
+      this.userId = this.userToken.id;      
+      }
   }
   
 
