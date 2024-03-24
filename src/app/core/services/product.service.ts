@@ -32,6 +32,9 @@ export class ProductService {
     return this._HttpClient.get(`${this.baseUrl}/api/v1/categories/${id}`);
  
   }
+  getAllOrders(id:string):Observable<any>{
+    return this._HttpClient.get(`${this.baseUrl}/api/v1/orders/user/${id}`)
+  }
 
 
 
